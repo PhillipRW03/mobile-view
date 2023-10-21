@@ -1,0 +1,145 @@
+body {
+    background-color: black;
+    color: #8ee4af;
+}
+
+h1 {
+    font-size: 36px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #8ee4af;
+    margin: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+
+}
+
+h3 {
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #8ee4af;
+    margin: 20px;
+}
+
+p {
+    line-height: 2pc;
+    margin-left: 20px;
+}
+
+img {
+    border: 5px solid white;
+    padding: 1px;
+    margin: 20px;
+    border-top-right-radius: 30px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+
+
+figcaption {
+    margin: 20px;
+}
+
+video {
+    border: 5px solid white;
+    padding: 1px;
+    margin: 20px;
+    border-top-right-radius: 30px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+
+
+
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.likes {
+    display: flex;
+    justify-content: None;
+}
+
+nav {
+    border: 1px solid #8ee4af;
+    padding: 10px;
+}
+
+#skip {
+    text-transform: uppercase;
+    margin: 20px;
+}
+
+.thumbnail {
+    display: block;
+    border: 5px solid white;
+    margin: auto;
+    width: 450px;
+}
+
+nav li.current a {
+    position: relative;
+    background-color: #8ee4af;
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+    /* Set the text color for the current page */
+}
+
+nav li a {
+    background-color: black;
+    color: #8ee4af;
+    padding: 5px;
+    margin: 20px;
+    border: 2px solid #8ee4af;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    nav li:hover {
+        transform: scale(1.25);
+    }
+    nav li a:hover {
+        background-color: white;
+        color: black;
+    }
+    video:hover {
+        transform: scale(1.1) rotate(5deg);
+        opacity: 0.7;
+    }
+    img:hover {
+        transform: scale(1.1) rotate(5deg);
+        opacity: 0.7;
+    }
+}
+
+
+
+
+.travel-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    #skip {
+        display: none;
+        /* Hide the link for mobile views */
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+    img[src$=".gif"] {
+        display: none;
+    }
+}
